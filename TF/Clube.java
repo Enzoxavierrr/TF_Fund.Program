@@ -46,7 +46,11 @@ switch (OpçãoUsuario) {
         break;
         case 4: // Incluir bicicleta.
             if(OpçãoUsuario==4){
-
+               if(CadastroBicicleta.incluirBicicleta(null) == true){
+                        System.out.println(" Você pode incluir uma bicicleta");
+                    }else{
+                        System.out.println("Você não temos espaço para incluir uma bicicleta");
+                    }
             }
         break;
         case 5: // Mostrar bicicletas.
@@ -71,7 +75,7 @@ switch (OpçãoUsuario) {
         break;
         case 9: // Quantidade total de unidades disponíveis no sistema de empréstimo.
             if(OpçãoUsuario==9){
-
+              System.out.println(CadastroBicicleta.totalUnidades());
             }
         break;
 
